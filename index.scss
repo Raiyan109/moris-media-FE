@@ -27,6 +27,10 @@ body {
         color: Variables.$secondaryColor;
     }
 
+    .whiteBg {
+        background-color: #fff;
+    }
+
     .backgroundLightGray {
         background-color: Variables.$lightGrayBg;
     }
@@ -70,6 +74,10 @@ body {
         color: Variables.$secondaryColor;
     }
 
+    .whiteBg {
+        background-color: Variables.$darkBg;
+    }
+
     .backgroundLightGray {
         background-color: Variables.$darkBg;
     }
@@ -85,4 +93,9 @@ body {
 
 .ovalImg {
     border-radius: 100px / 50px;
+}
+
+.linearBg {
+    background: rgb(110, 13, 136);
+    background: linear-gradient(90deg, rgba(110, 13, 136, 1) 0%, rgba(225, 0, 62, 1) 93%);
 }

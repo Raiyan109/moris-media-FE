@@ -1,0 +1,74 @@
+$bg: #232739;
+$bgA: #577af3;
+
+:root {
+    --cSize: 30px;
+    --cInactive: #232739;
+    --cActive: #577af3;
+    --particleSize: 0px;
+    --cEasing: ease;
+    --cTiming: 0.5s;
+    --innerPaddingSize: 30px;
+}
+
+.particles-checkbox {
+    height: 13px;
+    width: 13px;
+    display: inline-flex;
+    // appearance: none;
+    border: 1px gray solid;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin: 2px;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:checked {
+        background-color: var(--cActive);
+
+        &::after {
+            background-color: #ffffff;
+            height: calc(var(--cSize) * 0.3);
+            width: calc(var(--cSize) * 0.3);
+        }
+
+        &::before {
+            animation: particleAnimate var(--cTiming) var(--cEasing) forwards;
+        }
+
+        +span {
+            border-color: $bgA;
+            color: lighten($bg, 60%);
+        }
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: inherit;
+        height: 0px;
+        width: 0px;
+    }
+
+    &::after {
+        transition: all var(--cTiming) var(--cEasing);
+    }
+
+    &::before {
+        --particleSize: 4px;
+        height: var(--particleSize);
+        width: var(--particleSize);
+        z-index: 2;
+    }
+
+}

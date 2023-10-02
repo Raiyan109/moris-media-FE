@@ -23,6 +23,10 @@ body {
         color: Variables.$primaryColor;
     }
 
+    .secondaryColorText {
+        color: Variables.$secondaryColor;
+    }
+
     .backgroundLightGray {
         background-color: Variables.$lightGrayBg;
     }
@@ -34,6 +38,23 @@ body {
     .backgroundTopBanner {
         background-color: Variables.$secondaryColor;
     }
+
+    .yellowBg {
+        background-color: Variables.$yellow;
+    }
+
+    .yellowText {
+        color: Variables.$yellow;
+    }
+
+    .primaryBg {
+        background-color: Variables.$primaryColor;
+    }
+
+    .secondaryBg {
+        background-color: Variables.$secondaryColor;
+    }
+
 }
 
 .dark {
@@ -45,15 +66,23 @@ body {
         color: #fff;
     }
 
+    .secondaryColorText {
+        color: Variables.$secondaryColor;
+    }
+
     .backgroundLightGray {
-        background-color: black;
+        background-color: Variables.$darkBg;
     }
 
     .backgroundDarkGray {
-        background-color: black;
+        background-color: Variables.$darkBg;
     }
 
     .backgroundTopBanner {
-        background-color: black;
+        background-color: Variables.$darkBg;
     }
+}
+
+.ovalImg {
+    border-radius: 100px / 50px;
 }

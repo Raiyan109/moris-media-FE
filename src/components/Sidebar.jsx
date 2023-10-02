@@ -4,7 +4,7 @@ const Sidebar = () => {
     return (
         <div>
             <aside className="h-screen">
-                <nav className="h-full w-48 flex flex-col  border-r border-gray-200 shadow-sm">
+                <nav className="h-full w-32 md:w-48 flex flex-col  border-r border-gray-200 shadow-sm">
                     <div className="flex justify-start items-center">
                         {/* <img src="" alt="" /> */}
                         <h1 className="text-xl">Logo </h1>

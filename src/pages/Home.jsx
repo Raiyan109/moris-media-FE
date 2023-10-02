@@ -1,11 +1,11 @@
 import Navbar from '../components/Navbar';
-import Sidebar from '../components/Sidebar';
+import StartPage from './StartPage';
 
 const Home = () => {
     return (
         <div>
             <Navbar />
-            <Sidebar />
+            <StartPage />
         </div>
     );
 };

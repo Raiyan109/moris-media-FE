@@ -5,17 +5,20 @@ import GroupLogo from '../assets/groups.svg'
 import SystemLogo2 from '../assets/system.svg'
 import Sidebar from '../components/Sidebar'
 import SettingsNavbar from '../components/SettingsNavbar'
+import { useContext } from 'react'
+import { ThemeContext } from '../context/ThemeProvider'
 
 const Settings = () => {
+    const { theme } = useContext(ThemeContext)
     return (
-        <div>
+        <div className={theme}>
             <SettingsNavbar />
             <div className='flex'>
                 <Sidebar />
-                <div className="h-screen w-full bg-gray-100 py-20 px-32">
+                <div className="h-screen w-full backgroundLightGray py-20 px-32">
                     <div className="flex justify-center items-center rounded-xl">
                         <div className="w-full shadow-md flex rounded-lg border">
-                            <div className="w-1/3 h-full bg-gray-200 pt-7 pl-1 md:pl-5 flex flex-col">
+                            <div className="w-1/3 h-full backgroundDarkGray pt-7 pl-1 md:pl-5 flex flex-col">
                                 <h1 className="font-semibold text-xl">Settings</h1>
 
                                 <div className="border-b border-b-gray-300 mr-6">

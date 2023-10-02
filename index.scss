@@ -12,11 +12,27 @@ body {
 
 .light {
     .text {
+        color: black;
+    }
+
+    .topBannerText {
+        color: #fff;
+    }
+
+    .iconTextColor {
         color: Variables.$primaryColor;
     }
 
-    .background {
-        background-color: #fff;
+    .backgroundLightGray {
+        background-color: Variables.$lightGrayBg;
+    }
+
+    .backgroundDarkGray {
+        background-color: Variables.$darkGrayBg;
+    }
+
+    .backgroundTopBanner {
+        background-color: Variables.$secondaryColor;
     }
 }
 
@@ -25,7 +41,19 @@ body {
         color: #fff;
     }
 
-    .background {
-        background-color: Variables.$backgroundColor;
+    .topBannerText {
+        color: #fff;
+    }
+
+    .backgroundLightGray {
+        background-color: black;
+    }
+
+    .backgroundDarkGray {
+        background-color: black;
+    }
+
+    .backgroundTopBanner {
+        background-color: black;
     }
 }

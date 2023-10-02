@@ -1,0 +1,31 @@
+@use '../src/Variables/Variables.scss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.light {
+    .text {
+        color: Variables.$primaryColor;
+    }
+
+    .background {
+        background-color: #fff;
+    }
+}
+
+.dark {
+    .text {
+        color: #fff;
+    }
+
+    .background {
+        background-color: Variables.$backgroundColor;
+    }
+}

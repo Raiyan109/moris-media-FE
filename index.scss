@@ -27,6 +27,10 @@ body {
         color: Variables.$secondaryColor;
     }
 
+    .grayText {
+        color: Variables.$darkGrayBg;
+    }
+
     .whiteBg {
         background-color: #fff;
     }
@@ -88,6 +92,7 @@ body {
 
     .backgroundTopBanner {
         background-color: Variables.$darkBg;
+        border-bottom: 1px #fff solid;
     }
 }
 

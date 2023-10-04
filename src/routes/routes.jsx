@@ -5,16 +5,25 @@ import SignUp from "../pages/SignUp";
 import ForgotPassword from "../pages/ForgotPassword";
 import Settings from "../pages/Settings";
 import Branding from "../pages/Branding";
+import Layout from "../pages/Layout";
+import StartPage from "../pages/StartPage";
 
 const routes = createBrowserRouter([
     {
         path: '/',
-        element: <Home />
+        element: <Layout />,
+        children: [
+            {
+                path: '/',
+                element: <StartPage />
+            },
+            {
+                path: '/settings',
+                element: <Settings />
+            },
+        ]
     },
-    {
-        path: '/settings',
-        element: <Settings />
-    },
+
     {
         path: '/branding',
         element: <Branding />

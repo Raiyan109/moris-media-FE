@@ -8,7 +8,7 @@ const Sidebar = () => {
     const { theme } = useContext(ThemeContext)
     return (
         <div className={theme}>
-            <aside className="h-screen whiteBg text">
+            <aside className="h-screen whiteBg text ">
                 <nav className="h-full w-32 md:w-48 flex flex-col  border-r border-gray-200 shadow-sm space-y-8">
                     <div className="flex justify-center items-center pt-6">
                         {/* <img src="" alt="" /> */}

@@ -27,8 +27,8 @@ const StartPage = () => {
     const { theme } = useContext(ThemeContext)
     return (
         <div className={theme}>
-            <div className="flex">
-                <Sidebar />
+            <div className="">
+                {/* <Sidebar /> */}
                 <div className="h-full w-full backgroundLightGray py-20 px-32">
                     <div className="flex justify-center items-center rounded-xl">
                         {/* h-[811px] */}

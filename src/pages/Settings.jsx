@@ -16,9 +16,9 @@ const Settings = () => {
     const { theme } = useContext(ThemeContext)
     return (
         <div className={theme}>
-            <SettingsNavbar />
-            <div className='flex'>
-                <Sidebar />
+            {/* <SettingsNavbar /> */}
+            <div className=''>
+                {/* <Sidebar /> */}
                 <div className="h-screen w-full backgroundLightGray py-20 px-32">
                     <div className="flex justify-center items-center rounded-xl">
                         <div className="w-full shadow-md flex rounded-lg border h-[811px]">

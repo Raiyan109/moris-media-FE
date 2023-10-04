@@ -3,7 +3,7 @@ import StartPage from './StartPage';
 
 const Home = () => {
     return (
-        <div>
+        <div className=''>
             <Navbar />
             <StartPage />
         </div>

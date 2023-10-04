@@ -10,13 +10,13 @@ const Sidebar = () => {
         <div className={theme}>
             <aside className="h-screen whiteBg text">
                 <nav className="h-full w-32 md:w-48 flex flex-col  border-r border-gray-200 shadow-sm space-y-8">
-                    <div className="flex justify-start items-center">
+                    <div className="flex justify-center items-center pt-6">
                         {/* <img src="" alt="" /> */}
                         <h1 className="text-xl">Logo </h1>
                     </div>
 
-                    <ul className="flex-1 p-3">
-                        <li className="relative flex items-center py-2 px-3 gap-4 my-1 font-medium rounded-md cursor-pointer transition-colors">
+                    <ul className="flex-1 p-3 text-sm">
+                        <li className="relative flex items-center py-2 px-3 gap-4 my-1 font-medium rounded-md cursor-pointer transition-colors ">
                             <img src={HomeImg} alt="" />
                             <span>Home</span>
                         </li>

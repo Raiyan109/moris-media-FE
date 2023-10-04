@@ -10,6 +10,7 @@ import SettingsNavbar from '../components/SettingsNavbar'
 import '../Styles/Settings.scss'
 import { useContext } from 'react'
 import { ThemeContext } from '../context/ThemeProvider'
+import { Link } from 'react-router-dom'
 
 const Settings = () => {
     const { theme } = useContext(ThemeContext)
@@ -44,7 +45,7 @@ const Settings = () => {
                                     <h1 className="text-gray-400 uppercase text-sm md:text-xl">Calender</h1>
                                     <div className="py-2 px-4 hover:bg-gray-100 transition-all cursor-pointer flex items-center gap-2">
                                         <img src={BrandingLogo} alt="" />
-                                        <h1 className=" font-semibold hidden md:block">Branding</h1>
+                                        <Link to='/branding' className=" font-semibold hidden md:block">Branding</Link>
                                     </div>
                                     <div className="py-2 px-4 hover:bg-gray-100 transition-all cursor-pointer flex items-center gap-2">
                                         <img src={NotificationLogo} alt="" />

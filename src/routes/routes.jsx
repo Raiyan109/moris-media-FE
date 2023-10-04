@@ -4,6 +4,7 @@ import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
 import ForgotPassword from "../pages/ForgotPassword";
 import Settings from "../pages/Settings";
+import Branding from "../pages/Branding";
 
 const routes = createBrowserRouter([
     {
@@ -13,6 +14,10 @@ const routes = createBrowserRouter([
     {
         path: '/settings',
         element: <Settings />
+    },
+    {
+        path: '/branding',
+        element: <Branding />
     },
     {
         path: '/login',
